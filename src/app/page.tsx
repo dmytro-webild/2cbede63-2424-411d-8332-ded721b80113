@@ -78,6 +78,7 @@ export default function LandingPage() {
 
   <div id="metrics" data-section="metrics">
       <MetricCardTwo
+      useInvertedBackground={false}
       animationType="slide-up"
       textboxLayout="default"
       gridVariant="uniform-all-items-equal"
@@ -107,6 +108,7 @@ export default function LandingPage() {
 
   <div id="faq" data-section="faq">
       <FaqBase
+      useInvertedBackground={false}
       textboxLayout="default"
       faqs={[
         { id: "1", title: "Is check-in flexible?", content: "Yes, we accommodate early check-ins upon request." },
@@ -120,6 +122,7 @@ export default function LandingPage() {
 
   <div id="contact" data-section="contact">
       <ContactCenter
+      useInvertedBackground={false}
       background={{ variant: "radial-gradient" }}
       tag="Contact Us"
       title="Plan Your Private Retreat"
