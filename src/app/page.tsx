@@ -5,7 +5,7 @@ import ReactLenis from "lenis/react";
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FaqBase from '@/components/sections/faq/FaqBase';
 import FeatureCardSix from '@/components/sections/feature/FeatureCardSix';
-import FooterCard from '@/components/sections/footer/FooterCard';
+import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
 import HeroBillboard from '@/components/sections/hero/HeroBillboard';
 import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSplitTextAbout';
 import MetricCardTwo from '@/components/sections/metrics/MetricCardTwo';
@@ -131,9 +131,13 @@ export default function LandingPage() {
   </div>
 
   <div id="footer" data-section="footer">
-      <FooterCard
+      <FooterBaseCard
       logoText="CJ Private Resort"
-      copyrightText="© 2025 CJ Private Resort. All rights reserved."
+      columns={[
+          { title: "Resort", items: [{ label: "About Us", href: "#about" }, { label: "Amenities", href: "#services" }] },
+          { title: "Contact", items: [{ label: "Inquiries", href: "#contact" }, { label: "Events", href: "#faq" }] }
+      ]}
+      copyrightText="© 2025 CJ Private Resort. Tropical Oasis Edition."
     />
   </div>
       </ReactLenis>
